@@ -9,6 +9,7 @@ pipeline {
     stage ('Script') {
 
       steps {
+	  sh 'chmod +x rondoudou.sh'
 	  sh './rondoudou.sh'
       }
 
